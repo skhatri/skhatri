@@ -3,7 +3,6 @@
 - 🔭 I’m currently working on data in k8s
 - 👯 I’m looking to collaborate on OSS projects (Java, Go)
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: ...
 
 <span>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=skhatri&count_private=true&show_icons=true" />
