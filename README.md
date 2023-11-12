@@ -1,7 +1,6 @@
 ### G'day 👋
 
-- 🔭 I’m currently working on data in k8s
-- 👯 I’m looking to collaborate on OSS projects (Java, Go)
+- 👯 Interests: Java, Go, Kotlin, Data*, k8s
 - 😄 Pronouns: he/him
 
 <span>
