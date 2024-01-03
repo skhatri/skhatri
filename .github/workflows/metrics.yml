@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics.svg
+          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: skhatri
           config_timezone: Australia/Sydney
