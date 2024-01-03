@@ -16,5 +16,52 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          user: skhatri
+          config_timezone: Australia/Sydney
+          config_display: large
+          commits_authoring: servlet2@msn.com,kc2005au@gmail.com
+          plugin_achievements: yes
+          plugin_calendar: yes
+          plugin_calendar_limit: 3
+          plugin_languages: yes
+          plugin_languages_ignored: css, html, dockerfile, makefile, shell
+          plugin_licenses: yes
+          plugin_lines: yes
+          plugin_repositories: yes
+          plugin_repositories_featured: skhatri/microservices-starter-kotlin, skhatri/trino-by-example, skhatri/airflow-by-example, skhatri/grunt-nexus-deployer 
 
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          config_timezone: Australia/Sydney
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-repositories.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: lowlighter/metrics
+      - name: Indepth analysis
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-notable.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
